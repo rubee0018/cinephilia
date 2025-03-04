@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinephilia - National Film Festival</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Bebas Neue and Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- AOS Library for animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section id="home" class="hero" data-aos="fade-in">
+            <h1>Welcome to Cinephilia</h1>
+            <p>A national film festival Held by students of Arts.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" data-aos="fade-up">
+            <h2>About Cinephilia</h2>
+            <p>Join us for Cinephilia, a thrilling festival dedicated to the world of filmmaking, photography, animation, and gaming! This event brings together passionate creators to showcase their talents through various contests and fun activities.</p>
+            <p>Cinephilia, a two-day national-level film festival, stands as a testament to the unwavering passion and love for cinema. Organized by the Department of Fine Arts at KL University, this event transcends the boundaries of conventional film screenings, offering a platform for cinephiles, filmmakers, and enthusiasts to come together and celebrate the art of storytelling through moving images. The festival will take place in March, promising an unforgettable experience for all participants.</p>
+            <p>Whether you're a budding filmmaker, photographer, gamer, or animator, Cinephilia is the perfect platform to network, learn, and have fun. Don't miss out on this creative extravaganza!</p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" data-aos="fade-up">
+            <h2>Events</h2>
+            <div class="events-grid">
+                <!-- Gaming Tournaments -->
+                <div class="event-card" data-aos="zoom-in">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming Tournaments</h3>
+                    <p>Compete in Free Fire and PUBG tournaments for a chance to win exciting prizes!</p>
+                    <button class="learn-more" data-event="gaming">Learn More</button>
+                </div>
+                <!-- Film Hackathon Contest -->
+                <div class="event-card" data-aos="zoom-in">
+                    <i class="fas fa-film"></i>
+                    <h3>Film Hackathon Contest</h3>
+                    <p>Create a short film or concept video in just 12 hours based on a given theme.</p>
+                    <button class="learn-more" data-event="film-hackathon">Learn More</button>
+                </div>
+                <!-- Short Film Contest -->
+                <div class="event-card" data-aos="zoom-in">
+                    <i class="fas fa-video"></i>
+                    <h3>Short Film Contest</h3>
+                    <p>Submit your original short film (5-30 minutes) in any genre or animation style.</p>
+                    <button class="learn-more" data-event="short-film">Learn More</button>
+                </div>
+                <!-- Photography Contest -->
+                <div class="event-card" data-aos="zoom-in">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photography Contest</h3>
+                    <p>Capture a story in a single frame and submit your best photograph.</p>
+                    <button class="learn-more" data-event="photography">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="register" data-aos="fade-up">
+            <h2>Register for Events</h2>
+            <p>Join us by registering for the events below!</p>
+            <p>Get ready to showcase your talents at Cinephilia! Participation in this exciting festival comes with a nominal entry fee of ₹100, ensuring access to all events and activities. Register now to secure your spot and be part of this cinematic celebration!</p>
+            <a href="https://forms.gle/qwFB84HZs722DTUH6" class="btn"><i class="fas fa-ticket-alt"></i> Register Now</a>
+        </section>
+
+        <!-- Instagram Section -->
+        <section id="instagram" data-aos="fade-up">
+            <h2>Follow Us on Instagram</h2>
+            <a href="https://www.instagram.com/cinephilia_2k25/" class="insta-btn"><i class="fab fa-instagram"></i> Visit Instagram</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Cinephilia. All rights reserved.</p>
+        <p>Contact: [ cinephilianationalfilmfestival@gmail.com ]</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: false     // Animations replay every time the element enters the viewport
+        });
+    </script>
+
+    <!-- Modal JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
