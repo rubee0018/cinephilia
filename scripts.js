@@ -53,8 +53,7 @@ const eventDetails = {
             <li><strong>Duration:</strong> 5-30 minutes</li>
             <li><strong>Language:</strong> Any language with subtitles</li>
             <li><strong>Formats:</strong> MP4 with 1080p or higher resolution</li>
-            <li><strong>Registration:</strong> Google Form</li>
-            <li><strong>Deadline:</strong> 5 days before the event</li>
+            <li><strong>Deadline:</strong> 18th March 2025</li>
             <li><strong>Awards:</strong> Best 2 short films</li>
         </ul>
     `,
