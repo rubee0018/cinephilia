@@ -15,12 +15,16 @@
 <body>
     <!-- Navigation Bar -->
     <header>
+        <img src="https://i.postimg.cc/dVFSh6Vy/FINE-ARTS-LOGO2.png" alt="Cinephilia Logo" class="logo">
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#register">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +33,8 @@
     <main>
         <!-- Welcome Section -->
         <section id="home" class="hero" data-aos="fade-in">
-            <h1>Welcome to Cinephilia</h1>
-            <p>A national film festival Held by students of Fine Arts KLU.</p>
+            <h1>Welcome to <span class="cinephilia">Cinephilia</span></h1>
+            <p>A National Film Festival Held By Students of Fine Arts.</p>
         </section>
 
         <!-- About Section -->
@@ -49,39 +53,47 @@
                 <div class="event-card" data-aos="zoom-in">
                     <i class="fas fa-gamepad"></i>
                     <h3>Gaming Tournaments</h3>
+                    <span class="on-campus">On-Campus Event</span>
                     <p>Compete in Free Fire and PUBG tournaments for a chance to win exciting prizes!</p>
-                    <button class="learn-more" data-event="gaming">Learn More</button>
+                    <div class="button-container">
+                        <button class="learn-more" data-event="gaming">Learn More</button>
+                        <a href="https://forms.gle/aqixhmCrVbaJtd4y7" class="register-btn">Register Now</a>
+                    </div>
                 </div>
                 <!-- Film Hackathon Contest -->
                 <div class="event-card" data-aos="zoom-in">
                     <i class="fas fa-film"></i>
                     <h3>Film Hackathon Contest</h3>
-                    <p>Create a short film or concept video in just 12 hours based on a given theme.</p>
-                    <button class="learn-more" data-event="film-hackathon">Learn More</button>
+                    <span class="on-campus">On-Campus Event</span>
+                    <p>Create a short film or concept video in just 12 hours based on a given theme and concept.</p>
+                    <div class="button-container">
+                        <button class="learn-more" data-event="film-hackathon">Learn More</button>
+                        <a href="https://forms.gle/aqixhmCrVbaJtd4y7" class="register-btn">Register Now</a>
+                    </div>
                 </div>
                 <!-- Short Film Contest -->
                 <div class="event-card" data-aos="zoom-in">
                     <i class="fas fa-video"></i>
                     <h3>Short Film Contest</h3>
+                    <span class="national-event">National Event</span>
                     <p>Submit your original short film (5-30 minutes) in any genre or animation style.</p>
-                    <button class="learn-more" data-event="short-film">Learn More</button>
+                    <div class="button-container">
+                        <button class="learn-more" data-event="short-film">Learn More</button>
+                        <a href="https://forms.gle/aqixhmCrVbaJtd4y7" class="register-btn">Register Now</a>
+                    </div>
                 </div>
                 <!-- Photography Contest -->
                 <div class="event-card" data-aos="zoom-in">
                     <i class="fas fa-camera"></i>
                     <h3>Photography Contest</h3>
-                    <p>Capture a story in a single frame and submit your best photograph.</p>
-                    <button class="learn-more" data-event="photography">Learn More</button>
+                    <span class="national-event">National Event</span>
+                    <p>Capture a story in a single frame and Submit your best shot to us and photography showcase your talent.</p>
+                    <div class="button-container">
+                        <button class="learn-more" data-event="photography">Learn More</button>
+                        <a href="https://forms.gle/aqixhmCrVbaJtd4y7" class="register-btn">Register Now</a>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Registration Section -->
-        <section id="register" data-aos="fade-up">
-            <h2>Register for Events</h2>
-            <p>Join us by registering for the events below!</p>
-            <p>Get ready to showcase your talents at Cinephilia! Participation in this exciting festival comes with a nominal entry fee of ₹100, ensuring access to all events and activities. Register now to secure your spot and be part of this cinematic celebration!</p>
-            <a href="https://forms.gle/aqixhmCrVbaJtd4y7" class="btn"><i class="fas fa-ticket-alt"></i> Register Now</a>
         </section>
 
         <!-- Instagram Section -->
@@ -114,7 +126,7 @@
         });
     </script>
 
-    <!-- Modal JavaScript -->
+    <!-- Modal and Nav JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
