@@ -89,7 +89,7 @@ function closeModal() {
 // Close modal when clicking outside
 window.onclick = function(event) {
     const modal = document.getElementById('event-modal');
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = 'none';
     }
 }
@@ -104,3 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Toggle Navigation Menu
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
